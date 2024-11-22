@@ -1,0 +1,97 @@
+body{
+    overflow: hidden;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   height: 100vh;
+   background-color: rgb(9, 76, 125);
+}
+ .input2{
+   width: 250px;
+   padding: 10px 15px;
+   border-radius: 17px;
+   border: none;
+
+}
+ .button2{
+   width: 37px;
+   height: 37px;
+   cursor: pointer;
+   background-color: hsl(0, 0%, 100%);
+   border: none;
+   border-radius: 50%;
+   color: white;
+   transition: .4s;
+   white-space: nowrap;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+.button2 i{
+   color: black;
+   font-size: 14px;
+}
+.button2:hover{
+   
+}
+.weither-app-container{
+   background: linear-gradient(135deg,#00feba,#5b548a);
+   font-family: Arial;
+   width: 350px;
+   text-align: center;
+   border-radius: 8px;
+   padding-top: 22px;
+   padding-bottom: 26px;
+   margin-left: 20px;
+   margin-top: 20px;
+}
+.search-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 6px;
+   flex-wrap: nowrap;
+}
+.wheather-container{
+
+}
+.city{
+   margin-top: 40px;
+}
+.city,.wheather-container,.humidity-condition{
+   color: rgb(244, 244, 244);
+}
+.humidity-container{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 60px;
+}
+.humidity-condition,.wind-condition{
+   font-weight: bold;
+   margin: 0;
+   font-size: 13px;
+}
+.sky-condition{
+   font-weight: bold;
+   font-style: italic;
+   font-size: 28px;
+}
+.weatherImage{
+   margin: 0;
+   width: 100px;
+   margin-top: 10px;
+}
+.error-display{
+   font-weight: bold;
+   font-size: 15px;
+   font-style: italic;
+}
+.wind-speed,.humidity-text{
+   display: flex;
+   align-items: center;
+   gap: 8px;
+}
+.wind-speed i,.humidity-text i{
+   font-size: 24px;
+}

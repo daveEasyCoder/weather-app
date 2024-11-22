@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>weigher App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+   <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+    <div class="weither-app-container">
+        <div class="search-container">
+            <input class="input2" type="text" placeholder="Search">
+            <button class="button2"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </div>
+        
+           <div class="wheather-container" style="display: block;">
+                <h1 class="city">Adama</h1>
+                <img src="thunderson.png" class="weatherImage"></img>
+               
+                <h1 class="temp">26.59°C</h1>
+                <p class="sky-condition">scattered clouds</p>
+                <div class="humidity-container">
+                    <div class="humidity-text">
+                        <div><i class="fa-solid fa-cloud"></i></div>
+                        <div style="text-align: start;">
+                            <p class="humidity-condition">39%</p>
+                            <p style="margin: 0;font-size: 11px; font-weight: bold;">Humidity</p>
+                        </div> 
+                    </div>
+                    <div class="wind-speed">
+                        <div><i class="fa-solid fa-wind"></i></div>
+                        <div style="text-align: start;">              
+                            <p class="wind-condition">10.29 km/h</p>
+                            <p style="margin: 0;font-size: 11px;font-weight: bold;">Wind speed</p>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+           <p class="error-display"></p>
+    </div>
+
+    <script src="weather.js"></script>
+</body>
+</html>
