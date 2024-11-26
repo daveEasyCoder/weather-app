@@ -6,11 +6,10 @@ const city = document.querySelector('.city');
 const temp = document.querySelector('.temp');
 const humidity = document.querySelector('.humidity-condition');
 const skyCondtion = document.querySelector('.sky-condition');
+const string = '2c0e4ecf0330e91e336121de4360f29b';
 const errorText = document.querySelector('.error-display');
 
 
-
-const apiKey = '2c0e4ecf0330e91e336121de4360f29b';
 button2.addEventListener('click',async(event)=>{
     const name = input.value;
      fetchData(name);
@@ -29,7 +28,7 @@ const fetchData = async(name) => {
     if (name) {
         try {
             
-            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=${apiKey}`; 
+            const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${name}&appid=${string}`; 
             const response = await fetch(apiUrl);
             
             if (!response.ok) {
@@ -118,12 +117,3 @@ const getWeitherEmoji = (weitherId) => {
     }
     return image;
 }
-
-
-
-/*       const day = new Date();
-const date = day.toLocaleDateString("en",{
-weekday:"long"
-});
-
-*/
